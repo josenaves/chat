@@ -1,0 +1,31 @@
+<head>
+  <title>Chat</title>
+</head>
+
+<body>
+  <div class="hero-unit">
+    <h1>Mini chat</h1>
+    <p>Exemplo simples para demonstração do Meteor</p>
+  </div>
+  {{> entryField}}
+  {{> chat}}
+</body>
+
+<template name="entryField">
+    <input type="text" id="name" placeholder="Nome" /> 
+    <input type="text" id="message" placeholder="Mensagem" />
+</template>
+
+<template name="chat">
+    <p>Fui comprar pão e já volto !</p>
+</template>
+
+<!--
+<template name="chat">
+    <p>
+      {{#each messages}}
+        <i class="icon-user"/><strong>{{name}}</strong> - {{message}}</br>
+      {{/each}}
+    </p>
+</template>
+-->
